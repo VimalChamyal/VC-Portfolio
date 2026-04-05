@@ -3876,3 +3876,24 @@ input, select, textarea {
 		}
 
 	}
+
+.banner {
+  position: fixed;   /* sticks to screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffcc00;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  z-index: 9999;
+  animation: blink 1s infinite;
+}
+
+/* blinking animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
